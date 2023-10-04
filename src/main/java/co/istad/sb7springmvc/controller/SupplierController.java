@@ -5,9 +5,13 @@ import co.istad.sb7springmvc.service.SupplierService;
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.annotations.Delete;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/suppliers")
@@ -33,6 +37,16 @@ public class SupplierController {
     {
         supplierService.addNewSupplier(supplier);
     }
+
+    // Use for customized response status
+//@PostMapping
+//public ResponseEntity<?> addNewSupplier(@RequestBody Supplier supplier)
+//{
+//    supplierService.addNewSupplier(supplier);
+//    Map<String, Objects> data = new HashMap<>();
+//    //data.put("message", "You have added supplier  successfully");
+//    return new ResponseEntity<>(data,HttpStatus.CREATED);
+//}
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
