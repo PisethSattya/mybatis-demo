@@ -7,4 +7,5 @@ public record CreateProductDto (String name,
                                 Boolean inStock,
                                 Integer supplierId,
                                 List<Integer> categoryIds) {
+
 }
