@@ -1,20 +1,14 @@
 plugins {
-<<<<<<< HEAD
 	id 'java'
 	id 'org.springframework.boot' version '3.1.4'
 	id 'io.spring.dependency-management' version '1.1.3'
-=======
-    id 'java'
-    id 'org.springframework.boot' version '3.1.4'
-    id 'io.spring.dependency-management' version '1.1.3'
->>>>>>> b2669aa (finished with mybatis include mapstruct)
 }
 
 group = 'co.istad'
 version = '0.0.1-SNAPSHOT'
 
 java {
-<<<<<<< HEAD
+
 	sourceCompatibility = '17'
 }
 
@@ -26,31 +20,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-}
-
-dependencies {
-	runtimeOnly 'org.postgresql:postgresql'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-tasks.named('test') {
-	useJUnitPlatform()
-=======
-    sourceCompatibility = '17'
-}
-
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
-repositories {
-    mavenCentral()
 }
 
 dependencies {
@@ -69,5 +38,4 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
->>>>>>> b2669aa (finished with mybatis include mapstruct)
 }

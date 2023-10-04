@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-rootProject.name = 'sb7-review-spring-mvc'
-=======
 rootProject.name = 'sb7-spring-mvc'
->>>>>>> b2669aa (finished with mybatis include mapstruct)
+
